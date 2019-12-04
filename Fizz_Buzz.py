@@ -1,8 +1,9 @@
 # Write a bizz and fizz game ##project
 
+# Without loop
 # Asks user for number
 num = int(input('Whats your number? '))
-# Run through game function
+#Run through game function
 def fizz_buzz(num):
     # If remainder of number after being divided by 3 and 5 is 0 then return Bizzuu
     if num%3 == 0 and num%5 == 0:
@@ -15,8 +16,27 @@ def fizz_buzz(num):
         return 'Fizz'
     else:
         return 'Loser'
+
+# In loop
+while True:
+    num = int(input('Whats your number? '))
+    if num == 0:
+        break
+    if num % 3 == 0 and num % 5 == 0:
+        print('Bizzizz')
+        # If remainder of number after being divided by 3 then return Bizz
+    elif num % 3 == 0:
+        print('Bizz')
+    elif num % 5 == 0:
+        print('Fizz')
+    else:
+        print(num)
+
+
 # print user input number and the function output
-print(num, (fizz_buzz(num)))
+#print(num, (fizz_buzz(num)))
+
+
 
 
 
